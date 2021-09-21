@@ -1,5 +1,4 @@
 pipeline{
-  
     agent any
 
     stages{
@@ -8,6 +7,14 @@ pipeline{
                 echo "Hello World"
 
                 sh "mvn --version"
+
+                sh "cd config-service "
+
+                sh "mvn package"
+
+                sh "cd .."
+
+                
             }
         }
     }
