@@ -24,7 +24,7 @@ pipeline{
 
                 mvn package\
 
-                cd.."""
+                cd .."""
             }
         
         }
