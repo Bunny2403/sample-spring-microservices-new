@@ -20,9 +20,9 @@ pipeline{
         stage("department service build"){
             steps{
 
-                sh"""cd department-service/
+                sh"""cd department-service\
 
-                mvn package/
+                mvn package\
 
                 cd.."""
             }
