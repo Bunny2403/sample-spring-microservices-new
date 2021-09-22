@@ -2,7 +2,7 @@ pipeline{
     agent any
 
     stages{
-        stage("build"){
+        stage("config service build"){
             steps{
                 echo "Hello World"
 
@@ -16,6 +16,17 @@ pipeline{
 
                 
             }
+        }
+        stage("department service build"){
+            steps{
+
+                sh"""cd department-service/
+
+                mvn package/
+
+                cd.."""
+            }
+        
         }
     }
 }
