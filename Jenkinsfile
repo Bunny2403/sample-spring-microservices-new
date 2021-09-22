@@ -6,13 +6,13 @@ pipeline{
             steps{
                 echo "Hello World"
 
-                sh "mvn --version"
+                sh """mvn --version\
 
-                sh "cd config-service "
+                cd config-service\
 
-                sh "mvn package"
+                mvn package\
 
-                sh "cd .."
+                cd .."""
 
                 
             }
