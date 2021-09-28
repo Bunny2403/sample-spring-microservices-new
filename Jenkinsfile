@@ -1,6 +1,9 @@
 pipeline{
 
-    agent any
+    agent {
+        label 'nod1'
+        
+    }
 
     stages{
         stage("Building gateway service"){
